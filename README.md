@@ -1,9 +1,9 @@
-A full-stack Bank Management System built using HTML, CSS, JavaScript (Frontend) and Java + MySQL (Backend).
-This project allows users to manage bank accounts with basic banking operations through a web interface.
+🏦 Bank Management System – Java Backend
+
+This repository contains the backend implementation of a Bank Management System developed using Core Java and JDBC.
+The backend handles all business logic and database operations for banking functionalities.
 
 🚀 Features
-
-🔐 Login Page (UI)
 
 🆕 Create Bank Account
 
@@ -13,62 +13,38 @@ This project allows users to manage bank accounts with basic banking operations 
 
 📊 Check Account Balance
 
-🗄️ Data stored securely in MySQL
+🗄️ MySQL Database Integration
 
-🌐 Frontend–Backend integration using JavaScript Fetch API
+🔐 Secure database operations using JDBC
 
 🛠️ Tech Stack
-🔹 Frontend
 
-HTML
+Language: Java
 
-CSS
+Backend: Core Java
 
-JavaScript (Fetch API)
+Database: MySQL
 
-🔹 Backend
-
-Java
-
-JDBC
-
-(Servlet / Core Java backend)
-
-🔹 Database
-
-MySQL
+Database Connectivity: JDBC
 
 📂 Project Structure
-Bank-Management-System/
+bank-management-system-backend/
 │
-├── frontend/
-│   ├── index.html
-│   ├── dashboard.html
-│   ├── create.html
-│   ├── deposit.html
-│   ├── withdraw.html
-│   ├── css/
-│   │   └── style.css
-│   └── js/
-│       └── bank.js
-│
-├── backend/
-│   ├── BankAccount.java
-│   ├── BankService.java
-│   ├── DBConnection.java
-│   └── Main / Servlet files
-│
-├── database/
-│   └── bankdb.sql
+├── BankAccount.java     # Model class
+├── BankService.java     # Business logic
+├── DBConnection.java    # MySQL connection
+├── Main.java            # Entry point (console / testing)
 │
 └── README.md
 
-🧠 System Architecture
-HTML + CSS + JavaScript
-        ↓
-   Java Backend (JDBC / Servlet)
-        ↓
-      MySQL Database
+🧠 Backend Flow
+Client Request
+     ↓
+BankService.java
+     ↓
+DBConnection.java (JDBC)
+     ↓
+MySQL Database
 
 🗄️ Database Schema
 CREATE DATABASE bankdb;
@@ -80,56 +56,36 @@ CREATE TABLE accounts (
     balance DOUBLE
 );
 
-⚙️ How to Run the Project
-1️⃣ Setup Database
+⚙️ How to Run the Backend
 
-Install MySQL
+1️⃣ Install Java (JDK 8 or above)
+2️⃣ Install MySQL
+3️⃣ Create database using the SQL above
+4️⃣ Add MySQL JDBC Connector to project
+5️⃣ Update DB credentials in DBConnection.java
+6️⃣ Run Main.java
 
-Run the SQL script from database/bankdb.sql
+🔮 Future Enhancements
 
-2️⃣ Backend Setup
+REST API using Spring Boot
 
-Open backend folder in VS Code / Eclipse
+User Authentication
 
-Add MySQL JDBC Connector
+Transaction History
 
-Update DB username & password in DBConnection.java
-
-Run Java backend (or deploy servlet on Tomcat)
-
-3️⃣ Frontend Setup
-
-Open index.html in browser
-
-Make sure backend server is running on localhost:8080
-
-📸 Screens (Optional)
-
-Login Page
-
-Dashboard
-
-Create Account
-
-Deposit / Withdraw Pages
-
-(You can add screenshots here later)
+Frontend Integration (HTML, CSS, JavaScript)
 
 🧾 Resume Description
 
-Bank Management System | HTML, CSS, JavaScript, Java, MySQL
-Developed a full-stack banking application with a responsive web interface and Java backend integrated with MySQL database to perform core banking operations.
+Bank Management System Backend | Java, MySQL, JDBC
+Developed a backend banking system using Core Java and JDBC to handle account creation, transactions, and database operations.
 
-🙋 Author
+👨‍💻 Author
 
 Rupesh Patil
 
-GitHub: https://github.com/your-username
+Skills: Java | JDBC | MySQL | Backend Development
 
-Skills: Java | MySQL | HTML | CSS | JavaScript
+⭐ Support
 
-⭐ Acknowledgement
-
-This project was built for learning full-stack development and understanding frontend–backend integration.
-
-⭐ If you like this project, don’t forget to star the repo!
+If you find this project helpful, please ⭐ star the repository.
