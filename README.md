@@ -59,10 +59,15 @@ CREATE TABLE accounts (
 ⚙️ How to Run the Backend
 
 1️⃣ Install Java (JDK 8 or above)
+
 2️⃣ Install MySQL
+
 3️⃣ Create database using the SQL above
+
 4️⃣ Add MySQL JDBC Connector to project
+
 5️⃣ Update DB credentials in DBConnection.java
+
 6️⃣ Run Main.java
 
 🔮 Future Enhancements
